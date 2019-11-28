@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF Services", "WCF Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{FD61C372-A95B-40B1-915E-B578840E75CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasServices", "VentasServices\VentasServices.csproj", "{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{053057F3-15CE-4B14-A79A-ABEC805296EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{053057F3-15CE-4B14-A79A-ABEC805296EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{053057F3-15CE-4B14-A79A-ABEC805296EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +41,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DF50A2C7-7C75-4834-892B-0359AE20C884} = {FD61C372-A95B-40B1-915E-B578840E75CD}
 		{053057F3-15CE-4B14-A79A-ABEC805296EA} = {D3A302F4-E783-49D7-9246-5A9DDC13237A}
+		{2FFF7D30-FCC5-433B-8DE0-9E3C90BAE927} = {D3A302F4-E783-49D7-9246-5A9DDC13237A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53B0CAC0-AB10-4FB4-BA51-E49B542A90D9}
