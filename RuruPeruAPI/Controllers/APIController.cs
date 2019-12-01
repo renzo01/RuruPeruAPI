@@ -77,6 +77,54 @@ namespace RuruPeruAPI.Controllers
             }
             return Ok(serviceConsulta.ListarEstadoUsuario());
         }
+        [HttpPut]
+        public IHttpActionResult EliminarProducto(string id)
+        {
+            //validacion de la existencia del producto
+            if(id == "") return BadRequest("Codigo invalido");
+            string mensaje = "";
+            try
+            {
+                SqlCommand cmd = new SqlCommand("usp_eliminar_producto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", id);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                mensaje = "Registro exitoso"; 
+            }catch(Exception e)
+            {
+                mensaje = "Error al eliminar producto: " + e.Message;
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return Ok(mensaje);
+        }
+        [HttpPut]
+        public IHttpActionResult DesactivarCliente(String id)
+        {
+            if (id == "") return BadRequest("Codigo invalido");
+            string mensaje;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("usp_desactivar_cliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", id);
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                mensaje = "Se desactivo exitosamente";
+            }catch(Exception e)
+            {
+                mensaje = "No se pudo desactivar :" + e.Message;
+
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return Ok(mensaje);
+        }
     }
 }
 
