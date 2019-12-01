@@ -50,7 +50,5 @@ namespace RuruPeruClient.Controllers
             return View(reg);
         }
 
-
-
     }
 }
